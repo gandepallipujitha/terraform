@@ -55,7 +55,7 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = ""ami-09538990a0c4fe9be
+  ami             = "ami-09538990a0c4fe9be"
   instance_type   = "t2.micro"
   key_name        = "virginanorth"
   vpc_security_group_ids = [aws_security_group.five.id]
